@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Your next <span style="color: #646cff;">delicious</span> meal is just a click away!</h1>
+    <button id="get-recipe-btn">Get Recipe</button>
+    <div class="recipe-container flex">
+      <section class="meal-info">
+        <h2 id="meal-name"></h2>
+        <span id="meal-category"></span><br />
+        <a id="recipe-link" target="_blank">Source</a>
+        <a id="youtube-link" target="_blank">Youtube Link</a>
+        <h3>Ingredients</h3>
+        <p id="meal-ingredients"></p>
+      </section>
+      <section class="meal-image-container">
+        <img id="meal-image"></img>
+      </section>
+    </div>
+    <h3>Instructions</h3>
+    <p id="meal-instructions"></p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
